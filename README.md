@@ -397,7 +397,7 @@ For local models, adjust these parameters in your config:
 ```json
 {
   "type": "LlamaCpp",
-  "model": "gemma-3-4b",
+  "model": "bartowski/google_gemma-3n-E4B-it-GGUF",
   "contextSize": 4096,     # Larger for complex commands
   "temperature": 0.0,      # More deterministic (0.0-1.0)
   "maxTokens": 200,        # Longer commands
