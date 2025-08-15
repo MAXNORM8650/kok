@@ -27,9 +27,32 @@ Think of it as the terminal equivalent of quickly searching "how do I..." and ge
 ## Quick Start
 
 ### 1. Installation
-
+### Quick Install (Recommended)
 ```bash
-# Clone the repository
+curl -s https://raw.githubusercontent.com/MAXNORM8650/kok/main/install.sh | bash
+```
+```bash
+# if /usr/local/bin is not writable, it installs to ~/.local/bin so
+export PATH="$HOME/.local/bin:$PATH"
+```
+```bash 
+# change the config from defalt to local cpp models, eg. 
+echo '{
+  "type": "LlamaCpp",
+  "model": "ggml-org/gemma-3-4b-it-GGUF",
+  "contextSize": 2048,
+  "temperature": 0.1,
+  "maxTokens": 150,
+  "port":8081, 
+  "threads": 4
+}' > ~/.config/kok/config.json
+```
+```bash
+# Finally export the path for llama.cpp if it is alredy installed else install from https://github.com/ggml-org/llama.cpp 
+export LLAMA_DIR=path/to/llama.cpp
+```
+### Build from github source
+```bash
 git clone https://github.com/your-username/kok.git
 cd kok
 

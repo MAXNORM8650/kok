@@ -1,44 +1,30 @@
 {
-    "name": "kok",
-    "version": "1.0.0",
-    "description": "✨ Natural language to shell commands using AI ✨",
-    "module": "index.ts",
-    "type": "module",
-    "private": false,
-    "keywords": ["cli", "ai", "shell", "commands", "natural-language", "gpt", "claude", "gemini"],
-    "author": "Your Name",
-    "license": "MIT",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/your-username/kok.git"
-    },
-    "bin": {
-      "kok-cli": "./dist/kok-cli"
-    },
-    "scripts": {
-      "dev": "bun run index.ts",
-      "build": "bun build ./index.ts --compile --outfile dist/kok-cli",
-      "install:global": "npm run build && npm install -g .",
-      "setup": "node scripts/setup.js",
-      "test": "bun test",
-      "clean": "rm -rf dist"
-    },
-    "devDependencies": {
-      "@types/bun": "latest",
-      "@types/node": "^20.0.0"
-    },
-    "peerDependencies": {
-      "typescript": "^5"
-    },
-    "dependencies": {
-      "@anthropic-ai/sdk": "^0.22.0",
-      "@google/generative-ai": "^0.16.0",
-      "axios": "^1.11.0",
-      "env-paths": "^3.0.0",
-      "openai": "^5.12.2",
-      "zod": "^3.25.76"
-    },
-    "engines": {
-      "node": ">=18.0.0"
-    }
+  "name": "@maxnorm8650/kok",
+  "version": "1.0.0",
+  "description": "Natural language to shell commands using AI",
+  "main": "index.ts",
+  "bin": {
+    "kok-cli": "./dist/kok-cli"
+  },
+  "scripts": {
+    "build": "bun build ./index.ts --compile --outfile dist/kok-cli",
+    "postinstall": "npm run build"
+  },
+  "keywords": ["cli", "ai", "shell", "commands", "gpt", "claude", "natural-language"],
+  "author": "MAXNORM8650",
+  "license": "MIT",
+  "repository": {
+    "type": "git", 
+    "url": "git+https://github.com/MAXNORM8650/kok.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.22.0",
+    "@google/generative-ai": "^0.16.0", 
+    "env-paths": "^3.0.0",
+    "openai": "^5.12.2",
+    "zod": "^3.25.76"
   }
+}
