@@ -38,7 +38,7 @@ export PATH="$HOME/.local/bin:$PATH"
 mkdir -p ~/.config/kok
 ```
 ```bash 
-# change the config from default to local cpp models, eg. 
+# change the config from default to local cpp models, eg, for Linux users
 echo '{
   "type": "LlamaCpp",
   "model": "ggml-org/gemma-3-4b-it-GGUF",
@@ -48,7 +48,18 @@ echo '{
   "port":8081, 
   "threads": 4
 }' > ~/.config/kok/config.json
+# change the config from default to local cpp models, eg, Mac users
+echo '{
+  "type": "LlamaCpp",
+  "model": "ggml-org/gemma-3-4b-it-GGUF",
+  "contextSize": 2048,
+  "temperature": 0.1,
+  "maxTokens": 150,
+  "port":8081, 
+  "threads": 4
+}' > ~/Library/Preferences/kok/config.json
 ```
+
 ```bash
 # Finally export the path for llama.cpp if it is already installed, else install from https://github.com/ggml-org/llama.cpp 
 export LLAMA_DIR=path/to/llama.cpp
