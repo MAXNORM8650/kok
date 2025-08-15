@@ -3,9 +3,9 @@
 # Installation script
 #
 # Usage:
-#   curl -s https://raw.githubusercontent.com/your-repo/kok/main/install.sh | bash
+#   curl -s https://raw.githubusercontent.com/MAXNORM8650/kok/main/install.sh | bash
 #   or
-#   wget -qO- https://raw.githubusercontent.com/your-repo/kok/main/install.sh | bash
+#   wget -qO- https://raw.githubusercontent.com/MAXNORM8650/kok/main/install.sh | bash
 
 set -e
 
@@ -114,11 +114,11 @@ install_kok() {
     # Clone repository
     if command_exists git; then
         log "Cloning repository..."
-        git clone https://github.com/your-repo/kok.git .
+        git clone https://github.com/MAXNORM8650/kok.git .
     else
         # Fallback: download zip
         log "Downloading source..."
-        curl -L https://github.com/your-repo/kok/archive/main.zip -o kok.zip
+        curl -L https://github.com/MAXNORM8650/kok/archive/main.zip -o kok.zip
         unzip kok.zip
         cd kok-main
     fi
@@ -156,7 +156,7 @@ install_shell_functions() {
     log "Installing shell functions..."
     
     # Download shell functions
-    curl -s https://raw.githubusercontent.com/your-repo/kok/main/shell-functions.sh > /tmp/kok-functions.sh
+    curl -s https://raw.githubusercontent.com/MAXNORM8650/kok/main/shell-functions.sh > /tmp/kok-functions.sh
     
     # Add to shell configs
     for shell_config in "$HOME/.zshrc" "$HOME/.bashrc"; do

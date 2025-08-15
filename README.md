@@ -53,7 +53,8 @@ export LLAMA_DIR=path/to/llama.cpp
 ```
 ### Build from github source
 ```bash
-git clone https://github.com/your-username/kok.git
+# Clone the repository
+git clone https://github.com/MAXNORM8650/kok.git
 cd kok
 
 # Install dependencies (requires Bun)
