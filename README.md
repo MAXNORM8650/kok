@@ -66,6 +66,7 @@ export LLAMA_DIR=path/to/llama.cpp
 ```
 ### Quick uses
 ```bash
+# Check if there is no process running at lsof -i :8081. if running kill it by  ```bash kill -9 <PID>```
 kok-cli "name .py files in current dir"
 ```
 ### Build from github source
