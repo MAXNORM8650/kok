@@ -1,0 +1,15 @@
+# Exclude build outputs from NPM package
+dist/
+node_modules/
+
+# Users will build these themselves
+*.log
+
+# OS files  
+.DS_Store
+Thumbs.db
+
+# Development files
+.vscode/
+.idea/
+test-local-model.js
