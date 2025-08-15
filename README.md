@@ -30,7 +30,7 @@ Think of it as the terminal equivalent of quickly searching "how do I..." and ge
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/kok.git
+git clone https://github.com/MAXNORM8650/kok.git
 cd kok
 
 # Install dependencies (requires Bun)
