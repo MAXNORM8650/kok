@@ -452,7 +452,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Built with [Bun](https://bun.sh) for fast TypeScript execution
+- Built with [Bun](https://bun.sh) and [uwu](https://github.com/context-labs/uwu) for fast TypeScript execution
 - Inspired by natural language interfaces for command-line tools
 - Thanks to the open-source AI community for model development
 
