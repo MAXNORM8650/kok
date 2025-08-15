@@ -34,6 +34,8 @@ curl -s https://raw.githubusercontent.com/MAXNORM8650/kok/main/install.sh | bash
 ```bash
 # if /usr/local/bin is not writable, it installs to ~/.local/bin so
 export PATH="$HOME/.local/bin:$PATH"
+# Create ~/.config/kok if it does not already exist
+mkdir -p ~/.config/kok
 ```
 ```bash 
 # change the config from defalt to local cpp models, eg. 
