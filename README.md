@@ -72,6 +72,17 @@ If running, kill it by
 kill -9 <PID>
 Finally, 
 kok-cli "name .py files in current dir"
+# For better user experience, put this in nano ~/.zshrc for Mac and in nano ~/.bashrc in Linux
+kok() {
+  local cmd=$(kok-cli "$@")
+  if [ -n "$cmd" ]; then
+    read -e -i "$cmd" -p "▶ " cmd
+    if [ -n "$cmd" ]; then
+      history -s "$cmd"
+      eval "$cmd"
+    fi
+  fi
+}
 ```
 ### Build from github source
 ```bash
