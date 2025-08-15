@@ -38,7 +38,7 @@ export PATH="$HOME/.local/bin:$PATH"
 mkdir -p ~/.config/kok
 ```
 ```bash 
-# change the config from defalt to local cpp models, eg. 
+# change the config from default to local cpp models, eg. 
 echo '{
   "type": "LlamaCpp",
   "model": "ggml-org/gemma-3-4b-it-GGUF",
@@ -50,8 +50,12 @@ echo '{
 }' > ~/.config/kok/config.json
 ```
 ```bash
-# Finally export the path for llama.cpp if it is alredy installed else install from https://github.com/ggml-org/llama.cpp 
+# Finally export the path for llama.cpp if it is already installed, else install from https://github.com/ggml-org/llama.cpp 
 export LLAMA_DIR=path/to/llama.cpp
+```
+### Quick uses
+```bash
+kok-cli "name .py files in current dir"
 ```
 ### Build from github source
 ```bash
